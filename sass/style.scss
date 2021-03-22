@@ -1,0 +1,435 @@
+$color-text: #576671;
+$color-main: #17DAA3;
+$color-light: #fff;
+
+*,
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: 'Raleway', sans-serif;
+    color: $color-text;
+}
+
+.container {
+    max-width: 1540px;
+    padding: 80px 20px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 60px;
+    letter-spacing: 2px;
+    line-height: 96px;
+    font-weight: 250;
+}
+
+button {
+    width: 180px;
+    height: 50px;
+    border-radius: 23px;
+    color: $color-light;
+    background-color: rgba(0, 182, 203, 0);
+    border: 2px solid $color-light;
+}
+
+button:hover {
+    color: $color-main;
+    border-color: $color-main;
+}
+
+.main-btn {
+    background-color: $color-main;
+    margin-top: 60px;
+    align-items: center;
+}
+
+
+.darker-bg {
+    background-color: #F8F9FA;
+}
+
+// header
+
+.logo a {
+    text-decoration: none;
+    color: $color-light;
+    font-size: 24px;
+}
+
+
+.logo a:hover {
+    color: $color-main;
+}
+
+.logo span {
+    color: $color-main;
+}
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(https://i.postimg.cc/MpRY1B9T/pexels-tobias-bj-rkli-2113565-1.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    color: $color-light;
+}
+
+.header .container {
+    padding: 0 20px;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin-right: 30px;
+}
+
+.nav ul li a {
+    color: $color-light;
+    text-decoration: none;
+}
+
+
+.nav ul li a:hover {
+    color: $color-main;
+}
+
+.header-inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header-inner h1 {
+    font-size: 72px;
+    margin-bottom: 20px;
+}
+
+.header-inner h3 {
+    font-size: 24px;
+
+}
+
+.header-inner button {
+    margin-top: 60px;
+}
+
+// About
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.card {
+    margin: auto 15px;
+}
+
+.section-title {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 60px;
+    letter-spacing: 2px;
+    line-height: 96px;
+    color: #576671;
+    font-weight: 250;
+    position: relative;
+
+}
+
+.section-title h2:after {
+    position: absolute;
+    content: '';
+    bottom: -24px;
+    left: 50%;
+    width: 30px;
+    height: 5px;
+    transform: translateX(-50%);
+    background: $color-main;
+    ;
+}
+
+.section-title h3 {
+    font-size: 16px;
+}
+
+.card-container {
+    margin-top: 150px;
+}
+
+.card-icon {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: #87939d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.card-icon i {
+    color: $color-light;
+    font-size: 54px;
+}
+
+.card h3 {
+    color: #222;
+}
+
+.card-body {
+    text-align: center;
+}
+
+
+.center {
+    width: 100%;
+    text-align: center;
+}
+
+// Info
+
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    width: 50%;
+}
+
+.info h3 {
+    font-size: 60px;
+    letter-spacing: 2px;
+    line-height: 96px;
+    font-weight: 250;
+}
+
+.right {
+    align-self: flex-end;
+}
+
+//  Leader
+
+.lead-info {
+    background-image: url(https://i.postimg.cc/9QPFBd7b/Photo.png);
+}
+
+.lead-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-wrapper {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.lead-wrapper h4 {
+    font-size: 30px;
+    font-weight: 300;
+    color: $color-light;
+}
+
+.lead-wrapper h4 span {
+    color: $color-main;
+}
+
+.lead-wrapper p {
+    color: $color-light;
+}
+
+// Services
+
+.services-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 190px;
+}
+
+.service-item {
+    flex: 50%;
+    display: flex;
+    padding-right: 50px;
+}
+
+.item-icon {
+    flex: 25%;
+    position: relative;
+}
+
+.item-icon i {
+    color: $color-main;
+    font-size: 32px;
+    position: absolute;
+    left: 10%;
+    top: 15%;
+
+}
+
+.item-description {
+    flex: 75%;
+}
+
+.item-description h2 {
+    margin: 0;
+}
+
+
+// Team
+
+.team-wrapper {
+    margin-top: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.team-member {
+    flex: 20%;
+    background: #E4E4E4;
+    min-height: 200px;
+    min-width: 200px;
+    border: 1px solid #222;
+    list-style: none;
+    position: relative;
+}
+
+.team-member:nth-child(2n) {
+    background: #EFEFEF;
+}
+
+.team-member-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.team-member-name a {
+    color: transparent;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+.team-member:hover {
+    background-color: $color-main;
+    opacity: 0.9;
+}
+
+.team-member:hover .team-member-name a {
+    color: $color-light;
+}
+
+// pricing
+
+.pricing-wrapper {
+    display: flex;
+    padding-top: 100px;
+}
+
+.pricing-item {
+    flex: 25%;
+    margin-left: 30px;
+    background-color: $color-light;
+    border-radius: 5px;
+    min-height: 400px;
+}
+
+.pricing-item:first-child {
+    margin-left: 0;
+}
+
+.price-head {
+    padding-left: 30px;
+    padding-top: 50px;
+    border-bottom: 1px solid #EFEFEF;
+    padding-bottom: 60px;
+}
+
+.price-head span {
+    font-size: 60px;
+    color: $color-main;
+}
+
+.price-head p {
+    color: #87949e;
+    font-size: 18px;
+}
+
+.price-body {
+    padding-left: 30px;
+}
+
+.price-body p {
+    padding-top: 60px;
+    padding-bottom: 75px;
+    max-width: 80%;
+}
+
+.pricing-item button {
+    width: 100%;
+    color: $color-light;
+    border: none;
+    border-radius: 0;
+    background-color: $color-main;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+// map
+
+.map .container {
+    display: flex;
+}
+
+.description-map {
+    flex: 1;
+}
+
+.description-map p {
+    max-width: 80%;
+}
+
+.map-img {
+    flex: 1;
+}
+
+.map-img img{
+    position: absolute;
+    overflow: auto;
+}
